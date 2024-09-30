@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+    int score;
+    scanf("%d", &score);
+
+    switch(score / 5)
+    {
+        case 20: // 100
+        case 19: // 95 to 99
+        case 18: // 90 to 94
+        case 17: // 85 to 89
+        case 16: // 80 to 84
+            printf("A+\n");
+            break;
+        case 15: // 75 to 79
+            printf("A\n");
+            break;
+        case 14: // 70 to 74
+            printf("A-\n");
+            break;
+        case 13: // 65 to 69
+            printf("B+\n");
+            break;
+        case 12: // 60 to 64
+            printf("B\n");
+            break;
+        case 11: // 55 to 59
+            printf("B-\n");
+            break;
+        case 10: // 50 to 54
+            printf("C+\n");
+            break;
+        case 9: // 45 to 49
+            printf("C\n");
+            break;
+        case 8: // 40 to 44
+            printf("D\n");
+            break;
+
+
+        default:
+            printf("F\n");
+
+    }
+
+    return 0;
+}
