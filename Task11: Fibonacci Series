@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n, fib0=0, fib1=1, fib2=fib0+fib1 ;
+    printf("The Fibonacci series: ");
+    scanf("%d", &n);
+    printf("%d %d %d", fib0, fib1,fib2);
+
+    for(int i=3; i<=n;++i)
+    {
+        fib0=fib1, fib1=fib2;
+        fib2 = fib0+fib1;
+        printf(" %d",fib2);
+    }
+    return 0;
+}
